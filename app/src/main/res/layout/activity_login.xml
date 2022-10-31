@@ -75,13 +75,14 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
+                android:layout_margin="0dp"
+                android:text="  Masukkan username Anda                "
+                android:textColor="@color/light_gray"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
         </androidx.cardview.widget.CardView>
 
@@ -102,13 +103,14 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
+                android:layout_margin="0dp"
+                android:text="  Masukkan password Anda                "
+                android:textColor="@color/light_gray"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
         </androidx.cardview.widget.CardView>
 
@@ -116,14 +118,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="Lupa password?"
             android:fontFamily="@font/redhatdisplay_regular"
+            android:onClick="onForgotPass"
+            android:text="Lupa password?"
             android:textColor="@color/white"
-            android:textSize="8pt"/>
+            android:textSize="8pt"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
+        android:onClick="onLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="32dp"
@@ -149,6 +154,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:onClick="onNoAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Belum punya akun?"
